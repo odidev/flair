@@ -17,7 +17,7 @@ jobs:
         run: |
           pip install -r requirements.txt
           python setup.py develop -q
-      - name: Install unittest dependencies
+      - name: Install unittest dependencies for amd64
         run: pip install pytest
       - name: Run tests
         run: |
