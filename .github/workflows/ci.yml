@@ -35,7 +35,7 @@ jobs:
         - name: Set up QEMU
           id: qemu
           uses: docker/setup-qemu-action@v1
-        - name: Install Flair dependencies
+        - name: Install and test Flair.
           run: |
             docker run --rm -v ${{ github.workspace }}:/ws:rw --workdir=/ws \
               arm64v8/ubuntu:20.04 \
